@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Moldova Trip Registration</title>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="styleLab4.css">
+    <script type="text/javascript" src="scriptLab5.js"></script>
+  </head>
+
+  <body style="font-family: Tahoma, Geneva, sans-serif;">
+
+      <header class="header-trip">
+        <div class="nav">
+          <ul>
+            <li><a href="indexLab4.html">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li id="header-contact"><a href="#">marius.adauge@gmail.com</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <div id="emptyDiv"></div>
+      <div id="description"></div>
+      <!--container start-->
+      <div id="container">
+        <div id="container_body">
+          <div>
+            <h2 class="form_title">Moldova Trip Registration</h2>
+            <p class="head_para">Explore our sightseeings!</p>
+          </div>
+          <!--Form  start-->
+          <div id="form_name">
+            <div class="firstnameorlastname">
+
+             <form name="form" onSubmit="return formValidation();">
+                <input type="text" name="Name" value="" placeholder="First Name"  class="input_name" >
+                <input type="text" name="LastName" value="" placeholder="Last Name" class="input_name" >
+              </div>
+
+            <div id="long_field">
+              <input type="text" name="Email" value=""  placeholder="Your Email" class="long_field">
+            </div>
+
+            <div id="long_field">
+              <input type="text" name="Destiantion" value=""  placeholder="Destination" class="long_field">
+            </div>
+
+            <!--trip date details start-->
+            <div>
+              <h3 class="field_title">When?</h3>
+            </div>
+            <div>
+              <select name="trip_day" >
+                <option value="" selected>Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+              </select>
+              &nbsp;&nbsp;
+              <select name="trip_month" >
+                <option value="" selected >Month</option>
+                <option value="1">Jan</option>
+                <option value="2">Feb</option>
+                <option value="3">Mar</option>
+                <option value="4">Apr</option>
+                <option value="5">May</option>
+                <option value="6">Jun</option>
+                <option value="7">Jul</option>
+                <option value="8">Aug</option>
+                <option value="9">Sep</option>
+                <option value="10">Oct</option>
+                <option value="11">Nov</option>
+                <option value="12">Dec</option>
+              </select>
+              &nbsp;&nbsp;
+              <select name="trip_year">
+                <option value="" selected>Year</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+              </select>
+            </div>
+            <!--trip date details ends-->
+
+            <div id="radio_button">
+              <div>
+                <h3 class="field_title">Trip package</h3>
+              </div>
+
+              <input type="radio" name="radiobutton" value="Regular">
+              <label >Regular</label>
+              &nbsp;&nbsp;&nbsp;
+              <input type="radio" name="radiobutton" value="Premium">
+              <label >Premium</label>
+            </div>
+
+            <center>
+              <input type="submit" name="submit" value="Submit" />
+            </center>
+
+           </form>
+          </div>
+          <!--form ends-->
+        </div>
+      </div>
+      <!--container ends-->
+  </body>
+</html>
